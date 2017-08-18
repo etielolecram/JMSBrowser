@@ -59,15 +59,12 @@
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>jaxrs-api</artifactId>
-
         </dependency>
-
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
@@ -79,8 +76,6 @@
             <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-
-
         <!-- Import the EJB API, we use provided scope as the API is included in 
         JBoss WildFly -->
         <dependency>
@@ -88,27 +83,20 @@
             <artifactId>jboss-ejb-api_3.2_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-
-
-
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
             <artifactId>jboss-jsf-api_2.2_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
+
     <build>
-
         <finalName>${project.artifactId}</finalName>
-
         <plugins>
-
             <plugin>
-                
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.0.2.Final</version>
+                <version>1.1.0.Final</version>
             </plugin>
         </plugins>
     </build>
